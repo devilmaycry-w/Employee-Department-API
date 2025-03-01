@@ -1,0 +1,35 @@
+Employee-Department System
+
+A simple Spring Boot REST API to manage employees and departments with many-to-many relationships.  
+
+### Features: 
+- Add Employees & Departments  
+- Enroll Employees in Departments  
+- Fetch Employees & Their Departments  
+- Update & Delete Records  
+
+### **Tech Stack:**  
+- Backend: Spring Boot, JPA, Hibernate  
+- Database: MySQL  
+
+### **Endpoints:**  
+- `POST /emp` – Add Employee  
+- `POST /dept` – Add Department  
+- `POST /enroll/{empId}/{deptId}` – Enroll Employee in Department  
+- `GET /getemp/{id}` – Get Employee by ID  
+- `GET /emp/{id}/dept` – Get Employee's Departments  
+- `PUT /emp/{id}` – Update Employee (to be implemented)  
+- `DELETE /emp/{id}` – Delete Employee (to be implemented)  
+
+### **Setup & Run:**  
+1. Clone the repo:  
+   ```
+   git clone https://github.com/your-username/Employee-Department-API.git
+   ```  
+2. Configure MySQL in `application.properties`  
+3. Run the application:  
+   ```
+   mvn spring-boot:run
+   ```  
+
+🚀 **API is now ready!* Good to go!
